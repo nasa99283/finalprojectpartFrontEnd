@@ -1,0 +1,19 @@
+<div class="add-task">
+    <h3>Add Category</h3>
+
+    <form (ngSubmit)=" createcategory()" [formGroup]="createCategoryForm">
+        <label>Title:</label>
+        <input
+            type="text"
+            formControlName="title"
+            placeholder="Title..."
+        />
+        <label>Description:</label>
+        <textarea
+            type="text"
+            formControlName="description"
+            placeholder="Description...">
+        </textarea>
+        <button type="submit" [disabled]="createCategoryForm.invalid">Submit</button>
+    </form>
+</div>

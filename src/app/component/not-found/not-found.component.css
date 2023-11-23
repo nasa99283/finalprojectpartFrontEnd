@@ -1,0 +1,12 @@
+/* Apply styles to the <div> */
+div {
+    text-align: center;
+    margin-top: 50px; /* Adjust the margin based on your design */
+}
+
+/* Apply styles to the <h1> within the <div> */
+div h1 {
+    color: #ff0000; /* Red color for emphasis, you can change it to your preferred color */
+    font-size: 2em; /* Adjust the font size based on your design */
+    font-family: 'Arial', sans-serif; /* Use your preferred font-family */
+}

@@ -1,0 +1,12 @@
+<!-- project-list.component.html -->
+<app-nav-bar></app-nav-bar>
+<app-add-product (productCreatedEvent)="updateProductList()"></app-add-product>
+<!-- new component added -->
+<div class="project-list">
+  <div class="project-card card" *ngFor="let product of products">
+    <h3>
+      <a [routerLink]="['/products', product.id]">{{ product.title }} </a>
+    </h3>
+    <p>{{ product.description }}</p>
+  </div>
+</div>

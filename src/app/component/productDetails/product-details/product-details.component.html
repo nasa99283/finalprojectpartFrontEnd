@@ -1,0 +1,25 @@
+<!-- project-detail.component.html -->
+<app-nav-bar></app-nav-bar>
+<app-add-category
+  [productId]="product.id"
+  (cartCreatedEvent)="reloadProduct()"
+>
+</app-add-category>
+<!-- NEW -->
+<div class="project-details">
+  <h1>{{ product.title }}</h1>
+  <p>{{ product.description }}</p>
+ 
+  <div class="task-card card" *ngFor="let cart of product.carts">
+    <h3>{{ cart.title }}</h3>
+    <h4>Description:</h4>
+    <p>{{ cart.description }}</p>
+  </div>
+ 
+  <a [routerLink]="['/products']">
+    <button>Back to product</button>
+  </a>
+  <a [routerLink]="['/products', product.id, 'edit']">
+    <button>Edit product</button>
+  </a>
+</div>

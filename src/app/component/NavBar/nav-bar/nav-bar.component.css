@@ -1,0 +1,35 @@
+/* nav-bar.component.css */
+
+.navbar {
+  background-color: #0f0e0e;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 70px; /* Adjust the width of the logo as needed */
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center text horizontally */
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+.navbar div {
+  display: flex;
+  align-items: center;
+}

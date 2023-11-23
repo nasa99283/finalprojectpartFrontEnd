@@ -1,0 +1,19 @@
+<!-- edit-project.component.html -->
+<app-nav-bar></app-nav-bar>
+
+<br><br> <br>
+<div class="edit-project">
+  <h3>Edit the Product</h3>
+
+  <form (ngSubmit)="updateProduct()" [formGroup]="updateProductForm">
+    <label>Title:</label>
+    <input type="text" placeholder="Title..." [formControl]="titleInput" />
+
+    <label>Description:</label>
+    <textarea type="text" [formControl]="descriptionInput"> </textarea>
+
+    <button type="submit">Update Product</button>
+  </form>
+  <button (click)="deleteProduct()">Delete Product</button>
+</div>
+
